@@ -39,12 +39,12 @@
                     <td>{{ $mahasiswa->email }}</td>
                     <td>{{ $mahasiswa->tanggal_lahir }}</td>
                     <td>
-                        {{-- <form action="{{ route('mahasiswa.destroy',$mahasiswa->id) }}" method="Post">
-                            <a class="btn btn-warning" href="{{ route('mahasiswa.edit',$mahasiswa->id) }}">Edit</a>
+                        <form action="" method="Post">
+                            <a class="btn btn-warning" href="{{ route('mahasiswas.edit',$mahasiswa->id) }}">Edit</a>
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Hapus</button>
-                        </form> --}}
+                        </form>
                     </td>
                 </tr>
                 @empty
